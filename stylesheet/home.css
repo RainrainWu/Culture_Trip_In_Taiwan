@@ -1,0 +1,18 @@
+#homeNavBar{
+    margin-top: 25vh;
+    height: 20vh;
+}
+
+#title{
+    margin-top: 45vh;
+    height: 10vh;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 3vw;
+    color: black;
+}
+
+.homeNavButton{
+    height: 20vh;
+    border: black 5px solid;
+}
