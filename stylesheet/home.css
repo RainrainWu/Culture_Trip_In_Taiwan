@@ -6,13 +6,13 @@
 #title{
     margin-top: 45vh;
     height: 10vh;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
-    font-size: 3vw;
-    color: black;
+    font-size: 40px;
+    color: white;
 }
 
 .homeNavButton{
-    height: 20vh;
-    border: black 5px solid;
+    height: 15vh;
+    border: white 5px solid;
 }
