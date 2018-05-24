@@ -1,0 +1,17 @@
+.navButton{
+    height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    border: black 5px solid;
+}
+
+.infoBar{
+    margin-top: 5vh;
+}
+
+.infoPanel{
+    height: 25vh;
+    text-align: center;
+    vertical-align: middle;
+    border: black 5px solid;
+}
