@@ -7,6 +7,27 @@
 
 .infoBar{
     margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.infoPanel{
+    height: 25vh;
+    text-align: center;
+    vertical-align: middle;
+    border: black 5px solid;
+}
+
+.infoBar-content{
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5vh;
+    border: black 1px solid; 
+}
+
+.infoBar:hover .infoBar-content {
+    display: block;
+    height: 10vh;
 }
 
 .dropdown {
@@ -26,9 +47,3 @@
     height: 10vh;
 }
 
-.infoPanel{
-    height: 25vh;
-    text-align: center;
-    vertical-align: middle;
-    border: black 5px solid;
-}
