@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 .navButton{
     height: 10vh;
     text-align: center;
@@ -14,7 +16,7 @@
     height: 25vh;
     text-align: center;
     vertical-align: middle;
-    border: black 5px solid;
+    box-shadow: 0px 3px grey;
 }
 
 .infoBar-content{
@@ -47,3 +49,27 @@
     height: 10vh;
 }
 
+.restaurantImg{
+    text-align: center;
+    margin-top: 2.5%;
+    background-repeat: fill;
+    height: 80%;
+    width: 80%;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.restaurantTitle{
+    font-family: Noto Sans TC;
+    font-size: 2vw;
+    text-align: left;
+    height: 15px;
+}
+
+.restaurantSubTitle{
+    font-family: Noto Sans TC;
+    font-size: 1vw;
+    text-align: left;
+    color: #AAAAAA;
+}
