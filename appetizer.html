@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="jquery-2.1.1.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+        $('#img').click(function(){
+        
+        $(this).toggleClass('min');
+        $(this).toggleClass('max');
+        });
+        });
+    </script>
+</head>
+
+<body class="container" style="background-repeat:no-repeat; background-size: cover; background-position:center;">
+    <!-- fb comment box - script-->
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0&appId=1805550089560971&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="row">
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+        <a class="navButton hidden-xs col-sm-2 col-md-2 col-lg-2">Btn</a>
+    </div>
+    <div class="dropdown row hidden-lg hidden-md hidden-sm">
+        <a class="dropdown col-xs-12 hidden-lg hidden-md hidden-sm">Menu</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+        <a class="dropdown-content col-xs-12 hidden-lg hidden-md hidden-sm">Btn</a>
+    </div>
+    <div class="row infoBar">
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+        <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+            <img class="restaurantImg" src="https://i.imgur.com/vdAT5Zb.jpg">
+        </div>
+        <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+            <p class="restaurantTitle">
+                <a href="">戽斗米糕</a>
+            </p><br/>
+            <p class="restaurantSubTitle">——Hu-Dou Savory Rice Cake</p>
+            <p class="restaurantSubTitle">——Savory Rice Cake</p>
+            <p class="restaurantSubTitle">——No.98, Section 4, Jinhua Road, West Central District, Tainan City</p>
+            <p class="restaurantSubTitle">——17:15~00:30, closed on TUE</p>
+        </div>
+        <div class="col-lg-1 mapButton">
+            <a href="https://goo.gl/maps/13codBKfwzz">
+                <img class="mapImg" src="img/MapIcon.png">
+            </a>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+        <div class="clearfix"></div>
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+        <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+            <div class="col-lg-1"></div>
+            <img class="restaurantImg col-lg-2" src="https://i.imgur.com/zYzd3cU.jpg">
+            <img class="restaurantImg col-lg-2" src="https://i.imgur.com/PYnabUd.jpg">
+            <img class="restaurantImg col-lg-2" src="https://i.imgur.com/pg4rc08.jpg">
+            <img class="restaurantImg col-lg-2" src="https://i.imgur.com/fN9XlQC.jpg">
+            <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Wg6HpMu.jpg">
+        </div>
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+    </div>
+    <div class="row infoBar">
+            <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                <img class="restaurantImg" src="https://i.imgur.com/1XagNPz.jpg">
+            </div>
+            <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                <p class="restaurantTitle">
+                    <a href="https://www.facebook.com/pages/%E7%A5%BF%E8%A8%98%E5%8C%85%E5%AD%90/155398274524780">祿記包子</a>
+                </p><br/>
+                <p class="restaurantSubTitle">——Lu Ji Bao</p>
+                <p class="restaurantSubTitle">——Steamed Stuffed Bun, Bao</p>
+                <p class="restaurantSubTitle">——No.27, Lane 3, Kaishan Road, West Central District, Tainan City</p>
+                <p class="restaurantSubTitle">——07:45~19:00</p>
+            </div>
+            <div class="col-lg-1 mapButton">
+                <a href="https://goo.gl/maps/SsW3UtcygZ52">
+                    <img class="mapImg" src="img/MapIcon.png">
+                </a>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            <div class="clearfix"></div>
+            <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="col-lg-1"></div>
+                <img class="restaurantImg col-lg-2" src="https://i.imgur.com/rDfCpyC.jpg">
+                <img class="restaurantImg col-lg-2" src="https://i.imgur.com/bQy9GsF.jpg">
+                <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Rxc05YH.jpg">
+                <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Rk4wnvP.jpg">
+                <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Rh7QFxN.jpg">
+            </div>
+            <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+        </div>
+        <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/4R4kLLt.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/RICECAKELIN1956">水仙宮粽葉米糕</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Shuixian Temple leaf Savory Rice Cake</p>
+                    <p class="restaurantSubTitle">——Savory Rice Cake</p>
+                    <p class="restaurantSubTitle">——No.44, Section 3, Minquan Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——16:00~00:30</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/NE2RnmgbqzM2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/HI3QIwn.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/U2EKl0u.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/ogHUalg.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/f54B6lB.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/HHM5lw4.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/47f7dVK.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/yoyo74788">吉品紅豆餅</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Ji-Pin Wheel Pie</p>
+                    <p class="restaurantSubTitle">——Wheel Pie</p>
+                    <p class="restaurantSubTitle">——No.137, Section 1, Minsheng Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——11:00~17:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/RG7AdtNpf6y">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/I4GOhOg.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/zQj2e8e.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/gK4ez0W.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/H7foJjs.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/vPOvqar.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/b4c50xq.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="http://www.kintoku.com/">金得春捲</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Kintoku Spreing Rolls</p>
+                    <p class="restaurantSubTitle">——Spring Roll</p>
+                    <p class="restaurantSubTitle">——No.19, Section 3, Minzu Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——07:00~17:00, closed on MON</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/8tuwq62gJQC2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/aiQHpf9.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/FJ7OyMC.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/JEtZLQg.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/kBi2Ss0.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/hpfuPTU.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/o9kKXSU.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="">榮盛米糕</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Rong-Sheng Savory Rice Cake</p>
+                    <p class="restaurantSubTitle">——Savory Rice Cake</p>
+                    <p class="restaurantSubTitle">——No.106, Zhongzheng Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——10:30~18:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/P6aJ53a2fLo">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/QiZzrrY.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/vzOKiKj.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/NlP9lDZ.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/N4uJ8Bp.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/g3TDNxl.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/V6cQasb.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/%E9%84%AD%E8%A8%98%E8%94%A5%E8%82%89%E9%A4%85-%E8%A5%BF%E9%96%80%E5%BA%97-213177822043969/">鄭記蔥肉餅</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Cheng Kee Onion Patties</p>
+                    <p class="restaurantSubTitle">——Meaty-Spring Onion Fried Patties </p>
+                    <p class="restaurantSubTitle">——No.119, Section 2, Ximen Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——13:00~19:00, closed on SUN</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/Ben8uN3qCUx">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/5hOWeL6.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Va3huyg.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/h2csdhl.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/rIQib9C.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/pQpss1N.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="http://onegoodpin.business.site/">一味品碗粿魚羹</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Yi-Pin Rice Pudding and Thick Soup</p>
+                    <p class="restaurantSubTitle">——Savory Rice Pudding, Fish Thick Soup </p>
+                    <p class="restaurantSubTitle">——No.177, Section 3, Guohua St, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——05:00~17:00, closed on TUE</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/mreRpUMGKay">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/L3DorVC.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/03QvYOv.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/4j9A6ye.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/mKUKICe.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/pages/%E9%98%BF%E5%85%A8%E7%A2%97%E7%B2%BF/192697847427606">檨仔林阿全碗粿</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Suāinn-á Lin's Rice Pudding</p>
+                    <p class="restaurantSubTitle">——Savory Rice Pudding</p>
+                    <p class="restaurantSubTitle">——No.279, Section 1, Fuqian Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——07:00~18:00, close on MON</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/qXr49MUhN9M2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/ImuIPb6.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/HgXU7FA.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/VjFIIcz.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/fHj3BdU.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/DRlHrKv.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/senmaw/">森茂碗粿</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Senmaw Rice Pudding</p>
+                    <p class="restaurantSubTitle">——Savory Rice Pudding</p>
+                    <p class="restaurantSubTitle">——No.317, Kaishan Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——07:00~19:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/wcDihnC8W5u">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Uyb4I4O.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/QNW2GWs.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/XOBpTJL.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/xyH7hIR.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/d0AiNoY.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/2C5k0vm.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="http://guan-tsai-ban.com.tw/tw/">赤崁棺材板</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Chihkan Guan Tsai Ban</p>
+                    <p class="restaurantSubTitle">——Coffin Bread</p>
+                    <p class="restaurantSubTitle">——No.180, Zhongzheng Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——11:00~21:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/KgQCTYWeXux">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/FE2QZMq.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/YXl6MIh.jpgg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/QfOs2bS.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/nhw36T8.gif">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/sEfB1lS.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/9RLH7QX.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/chahtsunghan/">阿財點心</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Chah Snacks</p>
+                    <p class="restaurantSubTitle">——Assorted Side Dishes(Heibai Qie), Shrimp Roll</p>
+                    <p class="restaurantSubTitle">——No.6, Lane 206, You'ai Street, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——10:30~18:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/UcMzWL8FciM2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/o9ntfcS.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/YHLC6TH.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/B6bbjd6.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/MVj6JUz.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/APVQSTb.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/ZLOFI3d.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="">林家蕃薯椪</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Lin's Sweet Potato Puff</p>
+                    <p class="restaurantSubTitle">——Sweet Potato Puff</p>
+                    <p class="restaurantSubTitle">——No.213-2, You'ai Street, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——12:00~20:30</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/G1mCqSMEmZJ2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/TGV3hf3.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/uZ4qTin.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/dv7OTEI.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/hjQl7Zw.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/G2JMGmx.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/lonyimijian/">榮義蜜餞行</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Rong-Yi Dried Fruit</p>
+                    <p class="restaurantSubTitle">——Dried Fruit</p>
+                    <p class="restaurantSubTitle">——No.29, Section 2, Hai'an Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——10:00~22:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/Hxh1RwXc6hD2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/QQnjF9D.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Ey34mkI.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/phZfmGb.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/YuFDtJm.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/SnNn9YQ.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/x0yYY7j.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/lonyimijian/">阿龍香腸熟肉</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——A-Long Taiwanese Dishes</p>
+                    <p class="restaurantSubTitle">——Assorted Side Dishes(Heibai Qie)</p>
+                    <p class="restaurantSubTitle">——No.34, Bao'an Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——10:30~20:00, closed on MON</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://www.facebook.com/AA09250925/">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/JcuvyXZ.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/sS8NuJO.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/nIQc3ZG.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/ShsWUHj.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/d7AGinu.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/e7YMgLO.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/strollatjordan2015">漫步佐敦港式雞蛋仔</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Stroll at Jordan Egg Waffles</p>
+                    <p class="restaurantSubTitle">——Egg Waffles</p>
+                    <p class="restaurantSubTitle">——No.182, Section 2, Guohua St, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——13:30~22:00, 11:00~22:00 on SAT & SUN</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/EEEBVFL7EpK2">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/l7vlbu8.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/7o4td56.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Vve4Sb9.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/QnZVHwJ.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/SR7npU1.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/MU6ZDPB.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/pages/%E5%8F%8B%E8%AA%A0%E8%9D%A6%E4%BB%81%E8%82%89%E5%9C%93/188845857810375">友誠蝦仁肉圓</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Yo-Cheng Shrimp Meatball</p>
+                    <p class="restaurantSubTitle">——Taiwanese Shrimp Meatball (Bawan)</p>
+                    <p class="restaurantSubTitle">——No.118, Kaishan Road, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——9:45~20:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/LcwwBaWGbtp">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/bE0IHbG.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/YiJApod.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/sSjNbmZ.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/FXQw3ep.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/mLH98qm.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+            <div class="row infoBar">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3" >
+                    <img class="restaurantImg" src="https://i.imgur.com/5Q2SlD2.jpg">
+                </div>
+                <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                    <p class="restaurantTitle">
+                        <a href="https://www.facebook.com/pages/%E5%97%8E%E5%93%AA%E8%82%89%E5%9C%93/256834024438730">嗎哪肉圓</a>
+                    </p><br/>
+                    <p class="restaurantSubTitle">——Mana Taiwanese Meatball</p>
+                    <p class="restaurantSubTitle">——Taiwanese Meatball (Bawan)</p>
+                    <p class="restaurantSubTitle">——No.108, Section 2, Guohua St, West Central District, Tainan City</p>
+                    <p class="restaurantSubTitle">——6:00~18:00</p>
+                </div>
+                <div class="col-lg-1 mapButton">
+                    <a href="https://goo.gl/maps/j5dGicrLJv12">
+                        <img class="mapImg" src="img/MapIcon.png">
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="clearfix"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+                <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-lg-1"></div>
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/lUNyjUJ.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/K8GuSf0.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/maPwdDX.jpg">
+                    <img class="restaurantImg col-lg-2" src="https://i.imgur.com/Hm0IxsL.jpg">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div>
+            </div>
+    <!-- fb comment box -->
+    <div class="row">
+        <div class="fb-comments" data-href="https://spicyboyd.github.io/TainanGourmetPlaza/" data-width="100%" data-numposts="5"></div>
+    </div>
+</body>
+
+</html>
