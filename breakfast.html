@@ -50,7 +50,7 @@
             //data 塞入 html
             var demo = '';
             for (var i = 0; i < data.length; i++) {
-                demo += '<div class="row infoBar"> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3"><a href="' + data[i].image_main + '"> <img class="restaurantImg" src="' + data[i].image_main + '"> </a> </div> <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6"> <p class="restaurantTitle">';
+                demo += '<div id=' + data[i].restaurant_english + ' class="row infoBar"> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3"><a href="' + data[i].image_main + '"> <img class="restaurantImg" src="' + data[i].image_main + '"> </a> </div> <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6"> <p class="restaurantTitle">';
 
                 if (data[i].official_website == null) {
                     demo += '<a href="">';
