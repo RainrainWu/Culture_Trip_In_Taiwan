@@ -34,7 +34,7 @@
     <script src="js/firebaseInit.js"></script>
 </head>
 
-<body class="container" style="background-repeat:no-repeat; background-size: cover; background-position:center;">
+<body style="background-repeat:no-repeat; background-size: cover; background-position:center;">
     <!-- fb comment box - script-->
     <div id="fb-root"></div>
     <script src="js/facebookInit.js"></script>
@@ -61,7 +61,7 @@
         </div>
     </nav>
     <!-- foodInfo -->
-    <div id="foodInfo"></div>
+    <div id="foodInfo" class="container-fluid"></div>
     <script type="text/javascript">
     $(document).ready(function() {
         var userRef = firebase.database().ref('/food_list/main_course');
@@ -71,23 +71,23 @@
             //data 塞入 html
             var demo = '';
             for (var i = 0; i < data.length; i++) {
-                demo += '<div id="' + data[i].restaurant_english + '" class="row infoBar"> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> <div class="infoPanel col-xs-12 col-sm-4 col-md-3 col-lg-3"><a href="' + data[i].image_main + '" target="_blank"> <img class="restaurantImg" src="' + data[i].image_main + '"> </a> </div> <div class="infoPanel col-xs-12 col-sm-8 col-md-7 col-lg-6"> <p class="restaurantTitle">';
+                demo += '<div id="' + data[i].restaurant_english + '" class="infoBar"> <div class="row"> <div class="d-none d-lg-block col-lg-1"></div> <div class="infoPanel col-lg-3"><a href="' + data[i].image_main + '" target="_blank"> <img class="restaurantImg" src="' + data[i].image_main + '"> </a> </div> <div class="infoPanel col-lg-6"> <p class="restaurantTitle">';
 
                 if (data[i].official_website == null) {
-                    demo += '<a href="">';
+                    demo += data[i].restaurant;
                 } else {
-                    demo += '<a href="' + data[i].official_website + '" target="_blank">';
+                    demo += '<a href="' + data[i].official_website + '" target="_blank">' + data[i].restaurant + '</a>';
                 }
 
-                demo += data[i].restaurant + '</a> </p> <br/> <p class="restaurantSubTitle">——' + data[i].restaurant_english + '</p> <p class="restaurantSubTitle">——' + data[i].word + '</p> <p class="restaurantSubTitle">——' + data[i].address + '</p> <p class="restaurantSubTitle">——' + data[i].opening_hour + '</p> </div> <div class="col-lg-1 mapButton"> <a href="' + data[i].google_map + '" target="_blank"> <img class="mapImg" src="img/MapIcon.png"> </a> </div> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> <div class="clearfix"></div> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> <div class="infoBar-content col-xs-12 col-sm-12 col-md-10 col-lg-10"> <div class="col-lg-1"></div> <a href="' + data[i].image_1 + '" target="_blank"> <img class="restaurantImg col-lg-2" src="' + data[i].image_1 + '"> </a> <a href="' + data[i].image_2 + '" target="_blank"> <img class="restaurantImg col-lg-2" src="' + data[i].image_2 + '"> </a> <a href="' + data[i].image_3 + '" target="_blank"> <img class="restaurantImg col-lg-2" src="' + data[i].image_3 + '"> </a> <a href="' + data[i].image_4 + '" target="_blank"> <img class="restaurantImg col-lg-2" src="' + data[i].image_4 + '"> </a>'
+                demo += '</p> <br/> <p class="restaurantSubTitle">——' + data[i].restaurant_english + '</p> <p class="restaurantSubTitle">——' + data[i].word + '</p> <p class="restaurantSubTitle">——' + data[i].address + '</p> <p class="restaurantSubTitle">——' + data[i].opening_hour + '</p> </div> <div class="d-none d-lg-block col-lg-1 text-center" style="margin:auto;"> <a class="mapButton" href="' + data[i].google_map + '" target="_blank"> <img class="mapImg" src="img/MapIcon.png"> </a> </div> <div class="d-lg-none text-center" style="margin:auto;"> <a class="mapButton" href="' + data[i].google_map + '" target="_blank"> <p style="margin: 10px;">Google Map</p> </a> </div><div class="d-none d-lg-block col-lg-1"></div> </div> <div class="row"><div class="clearfix"></div> <div class="d-none d-lg-block col-lg-1"></div> <div class="infoBar-content col-lg-10"> <a href="' + data[i].image_1 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_1 + '"> </a> <a href="' + data[i].image_2 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_2 + '"> </a> <a href="' + data[i].image_3 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_3 + '"> </a> <a href="' + data[i].image_4 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_4 + '"> </a>'
 
                 if (data[i].image_5 == null) {
                     demo += '';
                 } else {
-                    demo += '<a href="' + data[i].image_5 + '" target="_blank"> <img class="restaurantImg col-lg-2" src="' + data[i].image_5 + '"> </a>';
+                    demo += '<a href="' + data[i].image_5 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_5 + '"> </a>';
                 }
 
-                demo += '</div> <div class="hidden-xs hidden-sm col-md-1 col-lg-1"></div> </div>'
+                demo += '</div> <div class="d-none d-lg-block col-lg-1"></div> </div> </div>'
             }
 
             $("#foodInfo").html(demo);
