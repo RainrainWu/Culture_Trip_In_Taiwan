@@ -115,3 +115,15 @@
 .image_btn{
     height: 30px;
 }
+
+.hover{
+    display: none;
+}
+
+a:hover .unhover{
+    display: none;
+}
+
+a:hover .hover{
+    display: initial;
+}
