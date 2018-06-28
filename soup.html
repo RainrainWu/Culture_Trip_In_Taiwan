@@ -26,13 +26,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- 新增字型 -->
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <!-- Back to Top btn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script type="text/javascript" src="js/backTopBtn.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet/backTopBtn.css">
 </head>
 
 <body style="background-repeat:no-repeat; background-size: cover; background-position:center;">
+    <!-- Logo -->
+    <div id="logo">
+        <img src="https://i.imgur.com/Dy26TFU.png">
+    </div>
+    <hr class="hr_thickness">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>Menu
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="margin: auto;">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav" style="text-align: center; margin: auto;">
@@ -48,9 +59,13 @@
             </ul>
         </div>
     </nav>
-    <!-- Logo -->
-    <div id="logo">
-        <img src="https://i.imgur.com/Dy26TFU.png">
+    <!-- text -->
+    <div class="row">
+        <div class="d-none d-lg-block col-lg-1"></div>
+        <div class="col-lg-5 col-12">
+            <h1 class="title_text display-4" style="color: #f9cf99;"><u class="d-none d-lg-block">SOUP</u><u class="d-lg-none title_text_center">SOUP</u></h1>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"></div>
     </div>
     <!-- foodInfo -->
     <div id="foodInfo" class="container-fluid">
@@ -329,9 +344,10 @@
     <iframe class="embed-responsive-item" src="comment.html" frameborder="0" width="100%" height="500px"></iframe>
     <!-- shadow -->
     <div class="row">
-        <img id="shadow" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="https://i.imgur.com/Vr8f33T.png">
-        <div class="clearfix"></div>
+        <img id="shadow" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="https://i.imgur.com/z5oj4eH.png">
     </div>
+    <!-- Back To Top btn -->
+    <a id="backTopBtn" class="btn backTopBtn"><i class="fas fa-chevron-circle-up fa-5x btn_color"></i></a>
     <!-- footer -->
 </body>
 

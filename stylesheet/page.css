@@ -112,18 +112,36 @@
     }
 }
 
-.image_btn{
+.image_btn {
     height: 30px;
 }
 
-.hover{
+.hover {
     display: none;
 }
 
-a:hover .unhover{
+a:hover .unhover {
     display: none;
 }
 
-a:hover .hover{
+a:hover .hover {
     display: initial;
+}
+
+.hr_thickness {
+    color: #eae5c8;
+    height: 2px;
+    border: none;
+    background: #eae5c8;
+}
+
+.title_text {
+    font-family: Alegreya;
+    margin: auto;
+    text-align: left;
+}
+
+.title_text_center {
+    text-align: center;
+    display: block;
 }
