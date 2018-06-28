@@ -103,11 +103,15 @@
     }
 
     .otherImg {
-    text-align: center;
-    margin-top: 2%;
-    height: initial;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+        text-align: center;
+        margin-top: 2%;
+        height: initial;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
 }
+
+.image_btn{
+    height: 30px;
 }
