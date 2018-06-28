@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/page.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="js/firebaseInit.js"></script>
+</head>
+
+<body>
+    <!-- foodInfo -->
+    <div id="foodInfo" class="container-fluid"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //記得改 ref
+        var userRef = firebase.database().ref('/food_list/soup');
+        userRef.on('value', function(snapshot) {
+            data = snapshotToArray(snapshot);
+
+            //data 塞入 html
+            var demo = '';
+            for (var i = 0; i < data.length; i++) {
+                demo += '<div id="' + data[i].restaurant_english + '" class="infoBar"> <div class="row"> <div class="d-none d-lg-block col-lg-1"></div> <div class="infoPanel col-lg-3"><a href="' + data[i].image_main + '" target="_blank"> <img class="restaurantImg" src="' + data[i].image_main + '"> </a> </div> <div class="infoPanel col-lg-6"> <p class="restaurantTitle">';
+
+                if (data[i].official_website == null) {
+                    demo += data[i].restaurant;
+                } else {
+                    demo += '<a href="' + data[i].official_website + '" target="_blank">' + data[i].restaurant + '</a>';
+                }
+
+                demo += '</p> <br/> <p class="restaurantSubTitle">——' + data[i].restaurant_english + '</p> <p class="restaurantSubTitle">——' + data[i].word + '</p> <p class="restaurantSubTitle">——' + data[i].address + '</p> <p class="restaurantSubTitle">——' + data[i].opening_hour + '</p> </div> <div class="d-none d-lg-block col-lg-1 text-center" style="margin:auto;"> <a class="mapButton" href="' + data[i].google_map + '" target="_blank"> <img class="mapImg" src="img/MapIcon.png"> </a> </div> <div class="d-lg-none text-center" style="margin:auto;"> <a class="mapButton" href="' + data[i].google_map + '" target="_blank"> <p style="margin: 10px;">Google Map</p> </a> </div><div class="d-none d-lg-block col-lg-1"></div> </div> <div class="row"><div class="clearfix"></div> <div class="d-none d-lg-block col-lg-1"></div> <div class="infoBar-content col-lg-10"> <a href="' + data[i].image_1 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_1 + '"> </a> <a href="' + data[i].image_2 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_2 + '"> </a> <a href="' + data[i].image_3 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_3 + '"> </a> <a href="' + data[i].image_4 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_4 + '"> </a>'
+
+                if (data[i].image_5 == null) {
+                    demo += '';
+                } else {
+                    demo += '<a href="' + data[i].image_5 + '" target="_blank"> <img class="otherImg col-lg-2 col-5" src="' + data[i].image_5 + '"> </a>';
+                }
+
+                demo += '</div> <div class="d-none d-lg-block col-lg-1"></div> </div> </div>'
+            }
+
+            $("#foodInfo").html(demo);
+        });
+
+        //轉換 json object to json array
+        function snapshotToArray(snapshot) {
+            var returnArr = [];
+            snapshot.forEach(function(childSnapshot) {
+                var item = childSnapshot.val();
+                item.key = childSnapshot.key;
+                returnArr.push(item);
+            });
+            return returnArr;
+        };
+    });
+    </script>
+</body>
+
+</html>
