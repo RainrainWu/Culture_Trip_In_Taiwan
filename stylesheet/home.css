@@ -8,6 +8,8 @@
     flex: 1;
     text-align: center;
     vertical-align: middle;
+    padding: 5px !important;
+    border-radius: 1rem;
 }
 
 #title {
@@ -31,18 +33,49 @@
     padding: 0px;
 }
 
-.image_btn{
+.image_btn {
     height: 30px;
 }
 
-.hover{
+.hover {
     display: none;
 }
 
-a:hover .unhover{
+a:hover .unhover {
     display: none;
 }
 
-a:hover .hover{
+a:hover .hover {
     display: initial;
+}
+
+.title_text {
+    font-family: Alegreya;
+    margin: auto;
+    text-align: center;
+    color: #a4a188;
+}
+
+.description {
+    background: #eae5c8;
+    margin-top: 50px ;
+    margin-bottom: 100px;
+    padding: 100px 0;
+    font-family: Courgette;
+}
+
+.description .col-10{
+    margin: auto;
+}
+
+.description .col-10 h1, h3{
+    display: inline;
+}
+
+.hr_thickness {
+    color: #eae5c8;
+    height: 2px;
+    border: none;
+    background: #eae5c8;
+    margin-bottom: 60px;
 }

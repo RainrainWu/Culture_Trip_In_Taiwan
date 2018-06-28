@@ -26,6 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>    
 </head>
 
 <body style="background-repeat:no-repeat; background-size: cover; background-position:center;">
@@ -33,6 +35,7 @@
     <div id="logo">
         <img src="https://i.imgur.com/Dy26TFU.png">
     </div>
+    <hr class="hr_thickness">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -51,17 +54,19 @@
             </ul>
         </div>
     </nav>
-    <!-- Photo lg bigger-->
+    <!-- text -->
+    <h1 class="d-none d-lg-block title_text display-4">WELCOME TO TAINAN!</h1>
+    <h3 class="d-lg-none title_text">WELCOME TO TAINAN!</h3>
+    <!-- photo-->
     <div class="d-none d-lg-block">
         <div class="container-fluid">
-            <div class="row" style="display: flex;">
+            <div class="row" style="display: flex; padding: 5px;">
                 <img class="homeImg col-lg-4" src="https://i.imgur.com/cBQQtkI.jpg">
                 <img class="homeImg col-lg-4" src="https://i.imgur.com/NjWUzFH.jpg">
                 <img class="homeImg col-lg-4" src="https://i.imgur.com/qoOznm3.jpg">
             </div>
         </div>
     </div>
-    <!-- Photo lg smaller-->
     <div class="d-lg-none">
         <div id="photo" class="carousel slide" data-ride="carousel" style="text-align: center;">
             <ul class="carousel-indicators">
@@ -88,20 +93,19 @@
         </a>
         </div>
     </div>
-    <!-- 文字敘述 -->
-    <div class="container-fluid">
-        <div class="row">
-            <div id="title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>Title</h1>
-                <br/> subtitle
-            </div>
-            <div class="clearfix"></div>
+    <!-- description -->
+    <div class="row description">
+        <div class="d-lg-none col-lg-2"></div>
+        <div class="col-lg-8 col-10">
+            <h1>Tainan</h1><h3>, a wonderfully historic city in southern Taiwan which is a great place to visit and an even better place to live. In addition to its cultural attractions such as temples and historic buildings, Tainan boasts the gourmet snacking of diversity and all for fairly cheap prices.</h3>
+            <br><br><h1>Tainan Gourmet Plaza</h1><h3> will show you wide varieties of food in Tainan. From breakfast to dinner, the meal to snack, you can spend the whole day enjoying gourmet food while strolling around this beautiful city.
+            <br><br>Now, let’s have a glimpse into this cultural root of Tainan!</h3>
         </div>
+        <div class="d-lg-none col-lg-2"></div>
     </div>
     <!-- shadow -->
     <div class="row">
-        <img id="shadow" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="https://i.imgur.com/Vr8f33T.png">
-        <div class="clearfix"></div>
+        <img id="shadow" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="https://i.imgur.com/qJSCtRh.png">
     </div>
     <!-- footer -->
 </body>
